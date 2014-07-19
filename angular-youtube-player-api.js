@@ -32,6 +32,9 @@ angular.module('youtube', ['ng']).run(function () {
                 height: this.playerHeight,
                 width: this.playerWidth,
                 videoId: this.videoId,
+                playerVars: {
+                  html5: 1,
+                },
                 events: {
                     onReady: onPlayerReady,
                     onStateChange: onPlayerStateChange
